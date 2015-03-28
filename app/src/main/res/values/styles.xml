@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- ToolBarの背景色 -->
+        <item name="colorPrimary">@color/yellow600</item>
+        <item name="colorPrimaryDark">@color/yellow800</item>
+        <!-- ToolBarのタイトルテキスト色 -->
+        <item name="android:textColorPrimary">@color/grey800</item>
+        <!-- ToolBarのオプションメニューのOverflowアイコンの色 -->
+        <item name="android:textColorSecondary">@color/grey800</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ShelterTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <!-- ToolBarの背景色 -->
+        <item name="colorPrimary">@color/teal400</item>
+        <item name="colorPrimaryDark">@color/teal800</item>
+        <!-- ToolBarのタイトルテキスト色 -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- ToolBarのオプションメニューのOverflowアイコンの色 -->
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="action_refresh">更新する</string>
+
+    <string name="safety_marker_legend">比較的安全</string>
+    <string name="danger_marker_legend">注意が必要</string>
+    <string name="evacuation_notice">避難する際は、各自治体から発令される実際の避難情報をご確認ください。</string>
+
+    <string name="no_alert_message_title">避難勧告、警報はありません。</string>
+    <string name="no_alert_message_body">現在のところ避難の必要はありません。</string>
+    <string name="elapsed_time_format_seconds">"%d秒前"</string>
+    <string name="elapsed_time_format_minutes">"%d分前"</string>
+    <string name="elapsed_time_format_hours">"%d時間前"</string>
+    <string name="elapsed_time_format_days">"%d日前"</string>
+    <string name="elapsed_time_format_over_three_days">3日以上前</string>
+    <string name="show_near_shelter">最寄りの避難所へ</string>
+
+    <string name="dialog_title_failed">失敗</string>
+    <string name="dialog_title_waring">警告</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_yes">はい</string>
+    <string name="dialog_button_no">いいえ</string>
+
+    <string name="error_disabled_gps">GPSが無効になっています。有効にするために設定画面を開きますか？</string>
+    <string name="error_no_userlocation">現在位置が測位できていません。地図の中心付近の避難所を表示します。</string>
+    <string name="error_register_notification">通知の登録に失敗しました。アプリを再起動して下さい。</string>
+    <string name="error_fetch_shelters">避難所情報の取得に失敗しました。画面の更新をして下さい。</string>
+    <string name="error_fetch_shelter">避難所情報の取得に失敗しました。画面の更新をして下さい。</string>
+    <string name="error_fetch_near_shelter">付近の避難所情報の取得に失敗しました。時間をおいて、再度実行して下さい。</string>
+    <string name="error_download_statuses">避難所状況の取得に失敗しました。画面の更新をして下さい。</string>
+    <string name="error_download_current_number">現在の人数の取得に失敗しました。画面の更新をして下さい。</string>
+
+    <string name="title_capacity">最大収容人数</string>
+    <string name="title_current">現在の人数</string>
+    <string name="default_capacity">—人</string>
+    <string name="default_current">—人</string>
+    <string name="format_capacity">%d人</string>
+    <string name="format_current">%d人</string>
+
+    <string name="title_altitude">標高：</string>
+    <string name="title_distance">現在位置からの距離：</string>
+    <string name="default_altitude">—m</string>
+    <string name="default_percent">—%</string>
+    <string name="default_distance">取得中…</string>
+    <string name="format_altitude">%1.2fm</string>
+    <string name="format_distance">%.1fm</string>
+    <string name="format_percent">%d%%</string>
+
+    <string name="capacity_over">現在この避難所は定員オーバーの可能性があります。</string>
+    <string name="start_navigation">この避難場所への案内を開始する</string>
+    <string name="show_other_shelters">他の避難場所を表示する</string>
+
+    <string name="title_shelter_list">避難場所候補</string>
+
+    <!--
+    <string name="default_distance">取得中…</string>
+
+    <string name="capacity_over_alert">現在この避難所は定員オーバーの可能性があります。</string>
+    <string name="list_title">避難場所候補</string>
+    <string name="go_navi_button">この避難場所への案内を開始する</string>
+    <string name="go_list_button">他の避難場所を表示する</string>
+    <string name="none_message_title_str">避難勧告、警報はありません</string>
+    <string name="none_message_body_str">急激な天候の変化や、自治体の警戒情報にご注意ください。</string>
+    <string name="alert_hinan">避難する際は、各自治体から発令される実際の避難情報をご確認ください。</string>
+    <string name="not_google_play">Google Play開発者サービスをインストールしてください。</string>
+    <string name="not_gps_title">GPS設定</string>
+    <string name="not_gps_message">より高精度な位置情報を利用する場合は、GPS機能をオンにしてください。</string>
+    <string name="gps_ok">設定する</string>
+    <string name="gps_ng">無視</string>-->
+
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 iPublishing Co., Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:esnavi="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:weightSum="20">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13">
+
+        <ImageView
+            android:id="@+id/shelter_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"/>
+
+        <jp.co.ipublishing.esnavi.views.ArcView
+            android:id="@+id/percent_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/shelter_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-70dp"
+            esnavi:arc_background="@color/white"
+            esnavi:arc_gaugeFillColor="@color/grey400"
+            esnavi:arc_gaugeValueColor="@color/teal400"
+            esnavi:arc_padding="3dp"
+            esnavi:arc_strokeWidth="5dp"
+            esnavi:arc_textSize="28sp"
+            />
+
+        <TextView
+            android:id="@+id/capacity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/shelter_image"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/percent_view"
+            android:layout_toStartOf="@+id/percent_view"
+            android:gravity="center"
+            android:text="@string/title_capacity"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/current_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/shelter_image"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/percent_view"
+            android:layout_toRightOf="@+id/percent_view"
+            android:gravity="center"
+            android:text="@string/title_current"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/capacity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/capacity_label"
+            android:layout_toLeftOf="@+id/percent_view"
+            android:layout_toStartOf="@+id/percent_view"
+            android:gravity="center"
+            android:text="@string/default_capacity"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/current_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/current_label"
+            android:layout_toEndOf="@+id/percent_view"
+            android:layout_toRightOf="@+id/percent_view"
+            android:gravity="center"
+            android:text="@string/default_current"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/over_capacity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/current_value"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/current_value"
+            android:layout_below="@+id/capacity_value"
+            android:gravity="center"
+            android:text="@string/capacity_over"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/deeporange500"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="16">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/altitude_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/title_altitude"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/altitude_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/altitude_label"
+                android:layout_toRightOf="@+id/altitude_label"
+                android:text="@string/default_altitude"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:contentDescription=""
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/distance_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/title_distance"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/distance_label"
+                android:layout_toRightOf="@+id/distance_label"
+                android:text="@string/default_distance"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark"/>
+
+        <Button
+            android:id="@+id/navi_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/ic_chevron_right_grey600_36dp"
+            android:drawableRight="@drawable/ic_chevron_right_grey600_36dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/start_navigation"
+            android:textColor="@color/teal400"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_dark"/>
+
+        <Button
+            android:id="@+id/other_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/ic_chevron_right_grey600_36dp"
+            android:drawableRight="@drawable/ic_chevron_right_grey600_36dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/show_other_shelters"
+            android:textColor="@color/deeporange600"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>

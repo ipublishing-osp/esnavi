@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- name : marquee view class name -->
+    <declare-styleable name="MarqueeView">
+        <attr name="marquee_text" format="string"/>
+        <attr name="marquee_textColor" format="color"/>
+        <attr name="marquee_background" format="color"/>
+        <attr name="marquee_textSize" format="dimension"/>
+        <attr name="marquee_padding" format="dimension"/>
+        <attr name="marquee_repeatLimit" format="integer"/>
+        <attr name="marquee_textMoveSpeed" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ArcView">
+        <attr name="arc_background" format="color"/>
+        <attr name="arc_gaugeFillColor" format="color"/>
+        <attr name="arc_gaugeValueColor" format="color"/>
+        <attr name="arc_strokeWidth" format="dimension"/>
+        <attr name="arc_padding" format="dimension"/>
+        <attr name="arc_textSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>

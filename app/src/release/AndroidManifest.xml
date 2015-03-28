@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.co.ipublishing.esnavi_sample" >
+
+    <application>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value=""/>
+       </application>
+</manifest>
